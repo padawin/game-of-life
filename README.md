@@ -1,6 +1,6 @@
 # game-of-life
 
-Processing implementation of the cellular automaton "Game of Life"
+Implementation of the cellular automaton "Game of Life" in processing
 
 ## Requirement
 
