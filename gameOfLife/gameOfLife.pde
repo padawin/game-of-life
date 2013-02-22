@@ -119,18 +119,3 @@ void keyPressed()
         }
     }
 }
-
-void mousePressed()
-{
-    int xPos = ceil(mouseX / radius);
-    int yPos = ceil(mouseY / radius);
-    if (xPos < width / radius - 1 && yPos < height / radius - 1) {
-        if (cellsStep1[xPos][yPos] == 1) {
-            cellsStep1[xPos][yPos] = 0;
-        }
-        else {
-            cellsStep1[xPos][yPos] = 1;
-        }
-    }
-}
-
