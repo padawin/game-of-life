@@ -1,5 +1,5 @@
 int radius = 8;
-int spacement = 10;
+int spacement = 20;
 int width = 1000;
 int height = 1000;
 int[][] cellsStep0 = new int[width / radius - 1][height / radius - 1];
@@ -20,7 +20,7 @@ void setup()
   background(255);
   launched = false;
   pause = false;
-  
+
   //randomly define alive cells
   for (int i = 0 ; i <= maxX ; i ++ ) {
     for (int j = 0 ; j <= maxY ; j ++ ) {
@@ -73,10 +73,10 @@ void refreshDisplay(int[][] cells)
     for (int i = minX ; i <= maxX ; i ++) {
       posX = i * radius - radius / 2;
       posY = j * radius - radius / 2;
-      
+
       //diffMouse = (int) sqrt(pow(posX - mouseX, 2) + pow(posY - mouseY, 2));
       //diffMouse = diffMouse > 100 ? 100 : diffMouse;
-      
+
       if (cells[i][j] == 1) {
         //fill(250 - 2.5 * diffMouse);
         fill(0);
